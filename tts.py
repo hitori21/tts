@@ -39,7 +39,7 @@ class TTS:
                 False
             ]
         }
-        response = requests.post(f"https://arzxh-bangkelah.hf.space/run/tts-{char}", json=payload)
+        response = requests.post(f"https://arzxh-vits-models.hf.space/run/tts-{char}", json=payload)
         
         if response.status_code == 200:
             audio_base64 = response.json()['data'][1]
